@@ -85,7 +85,7 @@ class Navbar extends HTMLElement {
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
-            <a href="#" class="contact-btn">Contact us</a>
+            <a href="./contact.html" class="contact-btn">Contact us</a>
         </div>
     </nav>
       `;
