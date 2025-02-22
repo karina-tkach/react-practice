@@ -151,7 +151,7 @@ class Footer extends HTMLElement {
             <li><a href="about.html">About us</a></li>
             <li><a href="features.html">Features</a></li>
             <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="./main.html#faq">FAQ</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </div>
