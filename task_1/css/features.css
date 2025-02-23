@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 .benefits-container {
     display: flex;
     flex-direction: column;
@@ -12,19 +13,23 @@
     margin: 0 auto;
     padding: 60px 20px;
 }
+
 .users-info {
     text-align: left;
 }
+
 .users-info h3 {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
 }
+
 .users-info p {
     font-size: 16px;
     opacity: 0.7;
     margin-top: 0;
 }
+
 .logos {
     display: flex;
     justify-content: space-between;
@@ -33,10 +38,12 @@
     gap: 30px;
     margin-bottom: 50px;
 }
+
 .logos img {
     height: 25px;
     opacity: 0.7;
 }
+
 .title {
     font-size: 48px;
     font-weight: bold;
@@ -46,12 +53,14 @@
     margin-top: 0;
     width: 630px;
 }
+
 .grid {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     width: 1300px;
 }
+
 .card {
     background: #f0f2fc;
     padding: 30px;
@@ -60,6 +69,7 @@
     width: 32%;
     text-align: left;
 }
+
 .icon {
     color: #4f46e5;
     background: #e0e7ff;
@@ -68,23 +78,32 @@
     display: inline-block;
     margin-bottom: 15px;
 }
+
 .icon img {
     width: 100%;
     height: 100%;
 }
+
 .card h3 {
     font-size: 24px;
     font-weight: 600;
     color: #282938;
     margin-bottom: 10px;
 }
+
 .card p {
     color: #6b7280;
     font-size: 16px;
     line-height: 28px;
 }
 
-.revision-section, .support-section, .delivery-section {
+.revision-section,
+.support-section,
+.delivery-section,
+.mission-section,
+.vision-section,
+.client-section,
+.about-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,30 +111,64 @@
     padding: 90px 120px;
     border-radius: 12px;
 }
-.support-section {
+
+.support-section,
+.client-section,
+.about-section {
     background-color: #ffffff;
 }
+
 .delivery-section {
     background-color: #FCD9801A;
 }
-.revision-section img, .support-section img, .delivery-section img {
+
+.revision-section img,
+.support-section img,
+.delivery-section img,
+.mission-section img,
+.vision-section img,
+.client-section img,
+.about-section img {
     width: 45%;
     border-radius: 10px;
 }
-.delivery-section img { 
+
+.delivery-section img,
+.mission-section img {
     max-height: 398px;
     object-fit: cover;
 }
-.revision-content, .support-content, .delivery-content {
+
+.revision-content,
+.support-content,
+.delivery-content,
+.mission-content,
+.vision-content,
+.client-content,
+.about-content {
     width: 50%;
     text-align: left;
 }
-.revision-content h3, .support-content h3, .delivery-content h3 {
+
+.revision-content h3,
+.support-content h3,
+.delivery-content h3,
+.mission-content h3,
+.vision-content h3,
+.client-content h3,
+.about-content h3 {
     font-size: 18px;
     font-weight: 400;
     color: #1f2937;
 }
-.revision-content h2, .support-content h2, .delivery-content h2 {
+
+.revision-content h2,
+.support-content h2,
+.delivery-content h2,
+.mission-content h2,
+.vision-content h2,
+.client-content h2,
+.about-content h2 {
     font-size: 38px;
     line-height: 56px;
     font-weight: 700;
@@ -123,7 +176,19 @@
     margin-top: 10px;
     margin-bottom: 15px;
 }
-.revision-content p, .support-content p, .delivery-content p {
+
+.about-content h2 {
+    font-size: 54px;
+    line-height: 64px;
+}
+
+.revision-content p,
+.support-content p,
+.delivery-content p,
+.mission-content p,
+.vision-content p,
+.client-content p,
+.about-content p {
     font-size: 16px;
     color: #6b7280;
     line-height: 28px;

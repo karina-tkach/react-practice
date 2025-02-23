@@ -1,0 +1,161 @@
+.team-section {
+    background-color: #F4F6FC;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 46px;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+.who-we-are {
+    background-color: #fff;
+    padding: 60px 150px;
+}
+
+.who-we-are h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.description {
+    background-color: #F4F5F5;
+    padding: 70px;
+}
+
+.who-we-are-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.who-we-are-content {
+    width: 48%;
+}
+
+.who-we-are-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.who-we-are-content p {
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 28px;
+}
+
+.who-we-are img {
+    width: 100%;
+    margin-top: 0px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.process-section {
+    margin: 20px 0 50px 0;
+    background: #fff;
+    padding: 40px 150px;
+    text-align: left;
+}
+
+.process-section h2 {
+    margin: 0 0 60px 0;
+    color: #18191F;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+}
+
+.step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.circle-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: #2405F2;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.dotted-line {
+    width: 220px;
+    opacity: 0.4;
+    height: 2px;
+    border-top: 2px dashed #2405F2;
+    margin-left: 10px;
+}
+
+.step {
+    margin-top: 10px;
+}
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 7px;
+    color: #222;
+}
+
+.step p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+}

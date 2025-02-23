@@ -7,9 +7,11 @@
     margin: 0;
     padding: 80px;
 }
+
 .pricing-heading {
-     width: 600px;
+    width: 600px;
 }
+
 .pricing-heading h2 {
     margin-top: 0;
     font-size: 36px;
@@ -17,17 +19,20 @@
     font-weight: bold;
     color: #282938;
 }
+
 .pricing-heading p {
     color: #282938;
     opacity: 0.7;
     font-size: 16px;
     margin-bottom: 40px;
 }
+
 .pricing-container {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 .pricing-card {
     background: #F4F6FC;
     padding: 60px 50px;
@@ -43,7 +48,7 @@
 }
 
 .pricing-card.highlight {
-    background: linear-gradient(180deg, rgba(31,33,103,1) 47%, rgba(28,30,83,1) 74%);
+    background: linear-gradient(180deg, rgba(31, 33, 103, 1) 47%, rgba(28, 30, 83, 1) 74%);
     color: white;
 }
 
@@ -75,39 +80,48 @@
     font-weight: bold;
     margin: 0 0 10px;
 }
+
 .pricing-card .price {
     font-size: 36px;
     font-weight: bold;
 }
+
 .pricing-card .tag {
     font-size: 16px;
     color: #2405F2;
 }
+
 .highlight .tag {
     font-size: 16px;
     color: #FCD980;
 }
+
 .features {
     list-style: none;
     padding: 0;
 }
+
 .features li {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .features li::before {
     content: '\25B6';
     color: #2ecc71;
     margin-right: 10px;
 }
+
 .features .inactive::before {
     color: rgb(160, 157, 157);
 }
+
 .button-container {
     display: flex;
     justify-content: center;
 }
+
 .button {
     display: block;
     width: 80%;
@@ -118,18 +132,22 @@
     text-decoration: none;
     font-size: 16px;
 }
+
 .button.primary {
     background: #282938;
     color: white;
 }
+
 .button.primary:hover {
     background: #535460;
 }
+
 .button.secondary {
     background: #FCD980;
     color: #222;
     z-index: 1;
 }
+
 .button.secondary:hover {
     background: #FDE4A6;
 }
