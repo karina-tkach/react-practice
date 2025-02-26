@@ -1,8 +1,14 @@
 import React from "react";
+import ArticleSection from "../components/ArticleSection";
+import "../assets/css/ArticleSection.css"
+import BlogSection from "../components/BlogSection";
 
 const Blog = () => {
     return (
-        <h1>Blog</h1>
+        <main>
+        <ArticleSection/>
+        <BlogSection/>
+        </main>
     );
 }
 

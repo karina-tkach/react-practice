@@ -27,19 +27,11 @@
     line-height: 28px;
 }
 
-.pricing-link:hover {
-    text-decoration: underline;
-}
-
 .cta {
     color: #4c5fd5;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-}
-
-.cta:hover {
-    text-decoration: underline;
 }
 
 .view-more {
@@ -48,26 +40,14 @@
     font-size: 16px;
 }
 
-.view-more:hover {
-    text-decoration: underline
-}
-
 .yellow-link {
     color: #FCD980;
     text-decoration: none;
 }
 
-.yellow-link:hover {
-    text-decoration: underline;
-}
-
 .faq-contact {
     color: #2405F2;
     text-decoration: none;
-}
-
-.faq-contact:hover {
-    text-decoration: underline;
 }
 
 .white-link {
@@ -76,6 +56,28 @@
     font-size: 18px;
 }
 
-.white-link:hover {
+.article-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #2405F2;
+    margin-top: 10px;
+}
+
+.blog-post-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1C1E53;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-post-link:hover,
+.article-link:hover,
+.white-link:hover,
+.faq-contact:hover,
+.yellow-link:hover,
+.view-more:hover,
+.cta:hover,
+.pricing-link:hover {
     text-decoration: underline;
 }
