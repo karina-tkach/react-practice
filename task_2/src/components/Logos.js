@@ -8,7 +8,7 @@ import logo5 from "../assets/img/Logo 5.png"
 
 const Logos = () => {
     return (
-      <div className="logos" >
+      <div className="logos" style={{ marginTop: 50, marginBottom: 0 }}>
         <div className="users-info">
           <h3>100.00+</h3>
           <p>Figma users</p>

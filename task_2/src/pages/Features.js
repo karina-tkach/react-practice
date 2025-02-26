@@ -13,7 +13,7 @@ const Features = () => {
         <main>
             <InfoSection title="All the features you need"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." />
-            <BenefitsSection heading="The benefits of working with our team" top="true"/>
+            <BenefitsSection heading="The benefits of working with our team" top={true}/>
             <RightImageSection
                 className="background-white"
                 title="Use Client-first"

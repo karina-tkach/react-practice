@@ -1,0 +1,23 @@
+.process-section {
+    margin: 20px 0 50px 0;
+    background: #fff;
+    padding: 40px 150px;
+    text-align: left;
+}
+
+.process-section h2 {
+    margin: 0 0 60px 0;
+    color: #18191F;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+}
