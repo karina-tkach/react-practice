@@ -1,0 +1,40 @@
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C1E53;
+    color: #ffffff;
+    padding: 50px 10%;
+    height: 536px;
+}
+
+.info-content {
+    max-width: 50%;
+}
+
+.info h1 {
+    font-size: 54px;
+    line-height: 74px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    margin-right: 45px;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.info-image img {
+    width: 638px;
+    max-width: 100%;
+    margin-left: 25px;
+}

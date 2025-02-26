@@ -1,0 +1,19 @@
+.faq-section {
+    padding: 50px 10%;
+    background-color: #F4F6FC;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.faq-header {
+    font-size: 38px;
+    color: #1a1a3d;
+    margin-bottom: 10px;
+}
+
+.faq-list {
+    margin-top: 0;
+}
+

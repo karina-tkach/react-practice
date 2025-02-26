@@ -1,0 +1,81 @@
+.primary-button {
+    background-color: #FCD980;
+    color: #1B1C2B;
+    border: none;
+    font-size: 18px;
+    line-height: 32px;
+    cursor: pointer;
+    width: 230px;
+    height: 62px;
+    cursor: pointer;
+    border-radius: 41px;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    background-color: #FDE4A6;
+    color: #1B1C2A;
+}
+
+.pricing-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.pricing-link:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    color: #4c5fd5;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cta:hover {
+    text-decoration: underline;
+}
+
+.view-more {
+    color: #282938;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.view-more:hover {
+    text-decoration: underline
+}
+
+.yellow-link {
+    color: #FCD980;
+    text-decoration: none;
+}
+
+.yellow-link:hover {
+    text-decoration: underline;
+}
+
+.faq-contact {
+    color: #2405F2;
+    text-decoration: none;
+}
+
+.faq-contact:hover {
+    text-decoration: underline;
+}
+
+.white-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.white-link:hover {
+    text-decoration: underline;
+}

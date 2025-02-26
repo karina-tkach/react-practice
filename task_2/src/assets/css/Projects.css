@@ -1,0 +1,79 @@
+.projects {
+    padding: 60px 10%;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    color: #282938;
+
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+}
+
+.left-project {
+    grid-area: 1 / 1 / 5 / 9;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.second-project {
+    grid-area: 3 / 8 / 5 / 11;
+}
+
+.first-project {
+    grid-area: 1 / 8 / 3 / 11;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.first-project img,
+.second-project img {
+    width: 100%;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37%;
+    height: 100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.first-project .project-overlay {
+    width: 100%;
+}
+
+.project-overlay h3 {
+    font-size: 24px;
+}
