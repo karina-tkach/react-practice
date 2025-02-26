@@ -1,0 +1,29 @@
+.users-info {
+    text-align: left;
+}
+
+.users-info h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.users-info p {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 0;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1180px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.logos img {
+    height: 25px;
+    opacity: 0.7;
+}

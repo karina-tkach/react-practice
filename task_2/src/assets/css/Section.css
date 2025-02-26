@@ -1,4 +1,4 @@
-section {
+.section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,7 +15,7 @@ section {
     background-color: #FCD9801A;
 }
 
-section img {
+.section img {
     width: 45%;
     border-radius: 10px;
     max-height: 398px;

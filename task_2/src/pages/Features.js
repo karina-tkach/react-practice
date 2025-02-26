@@ -6,12 +6,14 @@ import clientImage from "../assets/img/client-first.jpg"
 import manImage from "../assets/img/man-working.jpg"
 import supportImage from "../assets/img/support-image.jpg"
 import laptopImage from "../assets/img/delivery-image.jpg"
+import BenefitsSection from "../components/BenefitsSection";
 
 const Features = () => {
     return (
         <main>
             <InfoSection title="All the features you need"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." />
+            <BenefitsSection heading="The benefits of working with our team" top="true"/>
             <RightImageSection
                 className="background-white"
                 title="Use Client-first"

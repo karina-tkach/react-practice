@@ -1,0 +1,32 @@
+.benefits {
+    background-color: #f8f9fc;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 64px;
+    color: #1f2937;
+    margin-bottom: 40px;
+    margin-top: 0;
+    width: 630px;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 1300px;
+}
