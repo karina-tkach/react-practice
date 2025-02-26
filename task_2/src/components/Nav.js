@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Nav = ({ className }) => {
   const location = useLocation();
-
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const handleFaqClick = (e) => {
     e.preventDefault();
@@ -12,14 +15,20 @@ const Nav = ({ className }) => {
     if (location.pathname === "/") {
       const element = document.getElementById("faq");
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        window.scrollTo({
+          top: element.offsetTop - 55, 
+          behavior: "smooth",
+        });
       }
     } else {
       navigate("/#faq");
       setTimeout(() => {
         const element = document.getElementById("faq");
         if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+          window.scrollTo({
+            top: element.offsetTop - 55, 
+            behavior: "smooth",
+          });
         }
       }, 100);
     }
