@@ -17,6 +17,7 @@ const copiedMessages = ["COPIED!", "SAVED!", "CLONED!", "DUPLICATED!", "GRABBED!
 
 const PaletteBody = ({ format, soundOn }) => {
     const [activeColor, setActiveColor] = useState(null);
+    const [activeColorHex, setActiveColorHex] = useState(null);
     const [randomMessage, setRandomMessage] = useState("");
     let { id } = useParams();
     const palette = palettes.find((palette) => palette.id === id);
@@ -34,22 +35,6 @@ const PaletteBody = ({ format, soundOn }) => {
 
     const colors = palette.colors;
 
-    const copyToClipboard = (color) => {
-        navigator.clipboard.writeText(color)
-            .then(() => {
-                if (soundOn) {
-                    let sound = new Audio(notify);
-                    sound.currentTime = 0;
-                    sound.play().catch((err) => console.error("Audio play error:", err));
-
-                }
-                setActiveColor(color);
-                setTimeout(() => setActiveColor(null), 1000);
-            })
-            .catch((error) => console.error("Error copying color to clipboard:", error));
-    };
-    
-
     const formatColor = (hex) => {
         if (format.includes("RGB")) {
             let rgb = hexToRgb(hex);
@@ -58,6 +43,24 @@ const PaletteBody = ({ format, soundOn }) => {
         return format.includes("#AA1923") ? hex : hex.replace("#", "");
     };
 
+    const copyToClipboard = (color) => {
+        let copiedColor = formatColor(color);
+        navigator.clipboard.writeText(copiedColor)
+            .then(() => {
+                if (soundOn) {
+                    let sound = new Audio(notify);
+                    sound.currentTime = 0;
+                    sound.play().catch((err) => console.error("Audio play error:", err));
+
+                }
+                setActiveColorHex(color);
+                setActiveColor(copiedColor);
+                setTimeout(() => {setActiveColor(null); setActiveColorHex(null);}, 1000);
+            })
+            .catch((error) => console.error("Error copying color to clipboard:", error));
+    };
+    
+
     return (
         <div className="palette-body">
             {colors.map((color) => (
@@ -65,7 +68,7 @@ const PaletteBody = ({ format, soundOn }) => {
                     key={color.name}
                     className="color-tile"
                     style={{ backgroundColor: color.color }}
-                    onClick={() => copyToClipboard(formatColor(color.color))}
+                    onClick={() => copyToClipboard(color.color)}
                 >
                     <div className="copy-overlay">COPY</div>
                     <span className="color-name">{color.name}</span>
@@ -75,7 +78,7 @@ const PaletteBody = ({ format, soundOn }) => {
             {activeColor && (
                 <div
                     className={`fullscreen-overlay show-overlay`}
-                    style={{ backgroundColor: activeColor }}
+                    style={{ backgroundColor: activeColorHex }}
                 >
                     <span class="copied-text">{randomMessage}</span>
                     <span class="color-code">{activeColor}</span>
