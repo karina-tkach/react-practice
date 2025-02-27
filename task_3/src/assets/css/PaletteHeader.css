@@ -1,0 +1,67 @@
+.palette-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .palette-header a {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .format-selector {
+    position: relative;
+  }
+  
+  .format-button {
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .format-options {
+    position: absolute;
+    top: 160%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .format-option {
+    padding: 15px 12px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid #ecf0f1;
+    border-radius: 5px;
+  }
+  
+  .format-option:hover {
+    background: black;
+    color: white;
+  }
+  
+  .sound-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  
