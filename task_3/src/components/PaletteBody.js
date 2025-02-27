@@ -1,8 +1,9 @@
-import {React, useState} from 'react';
+import {React, useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import NotFound from "../pages/NotFound"
 import notify from "../assets/data/src_notify.mp3"
 import palettes from "../assets/data/pallete.json"
+import "../assets/css/PaletteBody.css"
 
 function hexToRgb(hex) {
     hex = hex.replace(/^#/, "");
@@ -12,24 +13,42 @@ function hexToRgb(hex) {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
+const copiedMessages = ["COPIED!", "SAVED!", "CLONED!", "DUPLICATED!", "GRABBED!"];
+
 const PaletteBody = ({ format, soundOn }) => {
-    const [clickSound] = useState(new Audio(notify));
+    const [activeColor, setActiveColor] = useState(null);
+    const [randomMessage, setRandomMessage] = useState("");
     let { id } = useParams();
     const palette = palettes.find((palette) => palette.id === id);
+
+    useEffect(() => {
+        if (activeColor !== null) {
+            const randomIndex = Math.floor(Math.random() * copiedMessages.length);
+            setRandomMessage(copiedMessages[randomIndex]);
+        }
+    }, [activeColor]);
 
     if (!palette) {
         return <NotFound />;
     }
 
     const colors = palette.colors;
+
     const copyToClipboard = (color) => {
         navigator.clipboard.writeText(color)
             .then(() => {
-                if (soundOn) clickSound.play();
-                alert(`Copied: ${color}`);
+                if (soundOn) {
+                    let sound = new Audio(notify);
+                    sound.currentTime = 0;
+                    sound.play().catch((err) => console.error("Audio play error:", err));
+
+                }
+                setActiveColor(color);
+                setTimeout(() => setActiveColor(null), 1000);
             })
             .catch((error) => console.error("Error copying color to clipboard:", error));
     };
+    
 
     const formatColor = (hex) => {
         if (format.includes("RGB")) {
@@ -48,11 +67,23 @@ const PaletteBody = ({ format, soundOn }) => {
                     style={{ backgroundColor: color.color }}
                     onClick={() => copyToClipboard(formatColor(color.color))}
                 >
-                    {color.name}
+                    <div className="copy-overlay">COPY</div>
+                    <span className="color-name">{color.name}</span>
+                    
                 </button>
             ))}
+            {activeColor && (
+                <div
+                    className={`fullscreen-overlay show-overlay`}
+                    style={{ backgroundColor: activeColor }}
+                >
+                    <span class="copied-text">{randomMessage}</span>
+                    <span class="color-code">{activeColor}</span>
+                </div>
+            )}
         </div>
     );
 }
 
 export default PaletteBody;
+/*add animation*/

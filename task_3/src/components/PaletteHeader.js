@@ -12,7 +12,7 @@ const PaletteHeader = ({ format, setFormat, formats, soundOn, setSoundOn }) => {
             Copy Format: {format} {showOptions ? "▲" : "▼"}
           </button>
           {showOptions && (
-            <ul className="format-options">
+            <ul className={`format-options ${showOptions ? "show" : ""}`}>
               {formats.map((option) => (
                 <li key={option} onClick={() => { setFormat(option); setShowOptions(false); }} className="format-option">
                   {option}

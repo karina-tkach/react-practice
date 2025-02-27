@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  font-family: Barlow;
+  padding: 0;
+}
+
+body * {
+  font-family: 'Barlow';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
