@@ -19,6 +19,7 @@ const PaletteBody = ({ format, soundOn }) => {
     const [activeColor, setActiveColor] = useState(null);
     const [activeColorHex, setActiveColorHex] = useState(null);
     const [randomMessage, setRandomMessage] = useState("");
+    const [showOverlay, setShowOverlay] = useState(false);
     let { id } = useParams();
     const palette = palettes.find((palette) => palette.id === id);
 
@@ -26,6 +27,11 @@ const PaletteBody = ({ format, soundOn }) => {
         if (activeColor !== null) {
             const randomIndex = Math.floor(Math.random() * copiedMessages.length);
             setRandomMessage(copiedMessages[randomIndex]);
+            setShowOverlay(true);
+
+            setTimeout(() => {
+                setShowOverlay(false);
+            }, 800);
         }
     }, [activeColor]);
 
@@ -55,7 +61,7 @@ const PaletteBody = ({ format, soundOn }) => {
                 }
                 setActiveColorHex(color);
                 setActiveColor(copiedColor);
-                setTimeout(() => {setActiveColor(null); setActiveColorHex(null);}, 1000);
+                setTimeout(() => {setActiveColor(null); setActiveColorHex(null);}, 1600);
             })
             .catch((error) => console.error("Error copying color to clipboard:", error));
     };
@@ -77,7 +83,7 @@ const PaletteBody = ({ format, soundOn }) => {
             ))}
             {activeColor && (
                 <div
-                    className={`fullscreen-overlay show-overlay`}
+                    className={`fullscreen-overlay ${showOverlay ? "show-overlay" : "hide-overlay"}`}
                     style={{ backgroundColor: activeColorHex }}
                 >
                     <span class="copied-text">{randomMessage}</span>
@@ -89,4 +95,3 @@ const PaletteBody = ({ format, soundOn }) => {
 }
 
 export default PaletteBody;
-/*add animation*/

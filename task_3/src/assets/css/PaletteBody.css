@@ -46,6 +46,34 @@
     font-weight: 600;
 }
 
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
 .fullscreen-overlay {
     position: fixed;
     top: 0;
@@ -59,6 +87,15 @@
     text-align: center;
     color: white;
     font-weight: bold;
+    animation-duration: 0.8s;
+}
+
+.show-overlay {
+    animation-name: bounceIn;
+}
+
+.hide-overlay {
+    animation-name: bounceOut;
 }
 
 .copied-text {
