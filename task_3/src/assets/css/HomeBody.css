@@ -1,0 +1,11 @@
+.palettes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  
