@@ -1,8 +1,5 @@
 import {React, useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
-import NotFound from "../pages/NotFound"
 import notify from "../assets/data/src_notify.mp3"
-import palettes from "../assets/data/pallete.json"
 import "../assets/css/PaletteBody.css"
 
 function hexToRgb(hex) {
@@ -15,13 +12,11 @@ function hexToRgb(hex) {
 
 const copiedMessages = ["COPIED!", "SAVED!", "CLONED!", "DUPLICATED!", "GRABBED!"];
 
-const PaletteBody = ({ format, soundOn }) => {
+const PaletteBody = ({ palette, format, soundOn }) => {
     const [activeColor, setActiveColor] = useState(null);
     const [activeColorHex, setActiveColorHex] = useState(null);
     const [randomMessage, setRandomMessage] = useState("");
     const [showOverlay, setShowOverlay] = useState(false);
-    let { id } = useParams();
-    const palette = palettes.find((palette) => palette.id === id);
 
     useEffect(() => {
         if (activeColor !== null) {
@@ -34,10 +29,6 @@ const PaletteBody = ({ format, soundOn }) => {
             }, 800);
         }
     }, [activeColor]);
-
-    if (!palette) {
-        return <NotFound />;
-    }
 
     const colors = palette.colors;
 
