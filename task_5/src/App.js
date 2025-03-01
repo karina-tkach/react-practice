@@ -1,10 +1,11 @@
 import React from "react";
+import RegistrationPage from "./pages/RegistrationPage";
 
-function App() {
+const App = () => {
+
   return (
-    <div>
-    </div>
+    <RegistrationPage/>
   );
-}
+};
 
 export default App;
