@@ -39,7 +39,7 @@ const RegistrationFirstStep = ({ onNext }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-md md:max-w-lg">
       {isOpen && <div className="w-full max-w-md md:max-w-lg bg-gray-100 p-4 mt-4 md:rounded-md flex items-start space-x-3">
         <span className="text-gray-400 text-lg">🔒</span>
         <p className="text-sm text-gray-700 flex-1">

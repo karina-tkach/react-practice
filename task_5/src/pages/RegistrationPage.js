@@ -30,7 +30,7 @@ const RegistrationPage = () => {
                 {activeStep === 2 && (
                     <RegistrationSecondStep onNext={handleNextStep}  onPrevious={handlePreviousStep} />
                 )}
-                {activeStep === 3 && <RegistrationThirdStep/>}
+                {activeStep === 3 && <RegistrationThirdStep onNext={handleNextStep}/>}
             </div>
         </div>
     );
