@@ -1,17 +1,19 @@
 import { React, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom"
 import { useStorage } from "./StorageProvider"
 
-const RegistrationThirdStep = ({ onNext }) => {
+const RegistrationThirdStep = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { setValue, getValue } = useStorage();
   const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     setValue("email", data.email);
     setValue("password", data.password);
-    onNext();
+    navigate("/profileInfo")
   };
 
   const validateEmail = (email) => {
