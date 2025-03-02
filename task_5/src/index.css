@@ -4,4 +4,9 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-feature-settings: 'lnum' 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
