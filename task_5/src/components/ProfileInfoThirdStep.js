@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom"
 import { useStorage } from "./StorageProvider"
 
-const RegistrationThirdStep = () => {
+const ProfileInfoThirdStep = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { setValue, getValue } = useStorage();
@@ -62,14 +62,13 @@ const RegistrationThirdStep = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        { password.length > 0 ?
-        validatePassword(password) ? (
+        {validatePassword(password) && password.length > 0 ? (
           <p className="text-green-500 text-xs mt-1">Good password!</p>
         ) : (
           <p className="text-red-500 text-xs mt-1">
             Password must be at least 8 characters, contain 1 digit, and 1 special character.
           </p>
-        ) : ""}
+        )}
 
       </div>
       <div className="w-full max-w-md md:max-w-lg md:mt-6 flex md:justify-start justify-center pb-10">
@@ -88,4 +87,4 @@ const RegistrationThirdStep = () => {
   );
 };
 
-export default RegistrationThirdStep;
+export default ProfileInfoThirdStep;
