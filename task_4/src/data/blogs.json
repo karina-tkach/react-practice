@@ -1,0 +1,461 @@
+[
+    {
+        "id": 1,
+        "title": "UX review presentations",
+        "category": "Design",
+        "date": "July 24, 2024",
+        "image": "image1.jpg",
+        "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+        "author": "Olivia Rhye"
+    },
+    {
+        "id": 2,
+        "title": "Migrating to Linear 101",
+        "category": "Product",
+        "date": "July 18, 2024",
+        "image": "image2.jpg",
+        "description": "Linear has been instrumental in software projects, bug tracking, and task management. Here's how to get started.",
+        "author": "Daniel Smith"
+    },
+    {
+        "id": 3,
+        "title": "Building your API stack",
+        "category": "Software Engineering",
+        "date": "July 15, 2024",
+        "image": "image3.jpg",
+        "description": "The rise of RESTful APIs has been a key factor in how we develop, testing, and managing them.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 4,
+        "title": "PM mental models",
+        "category": "Product",
+        "date": "July 12, 2024",
+        "image": "image4.jpg",
+        "description": "Mental models are the cognitive shortcuts of complex problem-solving in the workplace.",
+        "author": "Liam Johnson"
+    },
+    {
+        "id": 5,
+        "title": "What is wireframing?",
+        "category": "Design",
+        "date": "July 10, 2024",
+        "image": "image5.jpg",
+        "description": "An introduction to Wireframing and its 10 Principles. Learn how it's widely used in the industry.",
+        "author": "Emma Davis"
+    },
+    {
+        "id": 6,
+        "title": "How collaboration makes us better designers",
+        "category": "Design",
+        "date": "July 8, 2024",
+        "image": "image6.jpg",
+        "description": "Collaboration makes our teams stronger, and our individual design skills sharper.",
+        "author": "Michael Brown"
+    },
+    {
+        "id": 7,
+        "title": "Our top 10 Javascript frameworks to use",
+        "category": "Product",
+        "date": "July 6, 2024",
+        "image": "image7.jpg",
+        "description": "Modern web applications require the best Javascript frameworks and front-end libraries.",
+        "author": "Lucas Miller"
+    },
+    {
+        "id": 8,
+        "title": "Podcast: Creating a better CX Community",
+        "category": "Customer Success",
+        "date": "July 4, 2024",
+        "image": "image8.jpg",
+        "description": "Storytelling, communication, and CX strategies. How do you get started?",
+        "author": "Ava Wilson"
+    },
+    {
+        "id": 9,
+        "title": "Introduction to Agile Project Management",
+        "category": "Product",
+        "date": "June 30, 2024",
+        "image": "image9.jpg",
+        "description": "A guide to understanding Agile principles, methodologies, and their implementation in product management.",
+        "author": "James Martinez"
+    },
+    {
+        "id": 10,
+        "title": "Designing for Accessibility",
+        "category": "Design",
+        "date": "June 28, 2024",
+        "image": "image10.jpg",
+        "description": "How to ensure your designs are accessible to all users, including those with disabilities.",
+        "author": "Isabella Taylor"
+    },
+    {
+        "id": 11,
+        "title": "Best Practices for Front-End Development",
+        "category": "Software Engineering",
+        "date": "June 25, 2024",
+        "image": "image11.jpg",
+        "description": "A deep dive into front-end development best practices for building scalable and maintainable web applications.",
+        "author": "Ethan Robinson"
+    },
+    {
+        "id": 12,
+        "title": "Maximizing Customer Engagement",
+        "category": "Customer Success",
+        "date": "June 23, 2024",
+        "image": "image12.jpg",
+        "description": "Techniques to increase customer satisfaction and retention through personalized engagement strategies.",
+        "author": "Charlotte White"
+    },
+    {
+        "id": 13,
+        "title": "Mastering Product Design Systems",
+        "category": "Design",
+        "date": "June 20, 2024",
+        "image": "image13.jpg",
+        "description": "Building, managing, and scaling design systems to streamline workflows and create consistency in your product.",
+        "author": "Matthew Harris"
+    },
+    {
+        "id": 14,
+        "title": "Building a Scalable Backend Architecture",
+        "category": "Software Engineering",
+        "date": "June 18, 2024",
+        "image": "image14.jpg",
+        "description": "Learn the key principles of scalable backend architecture that supports growth and high availability.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 15,
+        "title": "Productivity Hacks for Remote Teams",
+        "category": "Product",
+        "date": "June 15, 2024",
+        "image": "image15.jpg",
+        "description": "How to manage and boost productivity for remote teams, from task management to communication tools.",
+        "author": "Liam Johnson"
+    },
+    {
+        "id": 16,
+        "title": "Effective Communication in Teams",
+        "category": "Customer Success",
+        "date": "June 12, 2024",
+        "image": "image16.jpg",
+        "description": "How to foster clear and effective communication in teams for better collaboration and productivity.",
+        "author": "Olivia Rhye"
+    },
+    {
+        "id": 17,
+        "title": "The Future of AI in Design",
+        "category": "Design",
+        "date": "June 10, 2024",
+        "image": "image17.jpg",
+        "description": "Exploring how artificial intelligence is shaping the design industry and creative processes.",
+        "author": "Daniel Smith"
+    },
+    {
+        "id": 18,
+        "title": "Scaling SaaS Products",
+        "category": "Product",
+        "date": "June 8, 2024",
+        "image": "image18.jpg",
+        "description": "Best practices for scaling software-as-a-service products for rapid growth and market expansion.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 19,
+        "title": "Writing Clean Code",
+        "category": "Software Engineering",
+        "date": "June 6, 2024",
+        "image": "image19.jpg",
+        "description": "A guide to writing clean, maintainable, and efficient code for long-term project sustainability.",
+        "author": "Michael Brown"
+    },
+    {
+        "id": 20,
+        "title": "User-Centered Design Principles",
+        "category": "Design",
+        "date": "June 3, 2024",
+        "image": "image20.jpg",
+        "description": "Understanding the fundamentals of user-centered design and its impact on user experience.",
+        "author": "Emma Davis"
+    },
+    {
+        "id": 21,
+        "title": "Building a Customer-First Culture",
+        "category": "Customer Success",
+        "date": "June 1, 2024",
+        "image": "image21.jpg",
+        "description": "Strategies for creating a customer-first culture that drives loyalty and long-term success.",
+        "author": "Liam Johnson"
+    },
+    {
+        "id": 22,
+        "title": "The Psychology of UX",
+        "category": "Design",
+        "date": "May 30, 2024",
+        "image": "image22.jpg",
+        "description": "How psychological principles shape user experience design and influence user behavior.",
+        "author": "Lucas Miller"
+    },
+    {
+        "id": 23,
+        "title": "Introduction to DevOps",
+        "category": "Software Engineering",
+        "date": "May 28, 2024",
+        "image": "image23.jpg",
+        "description": "An overview of DevOps principles, methodologies, and best practices for modern software development.",
+        "author": "James Martinez"
+    },
+    {
+        "id": 24,
+        "title": "Storytelling in Product Marketing",
+        "category": "Product",
+        "date": "May 25, 2024",
+        "image": "image24.jpg",
+        "description": "How storytelling can enhance your product marketing strategy and connect with users.",
+        "author": "Charlotte White"
+    },
+    {
+        "id": 25,
+        "title": "Microservices vs Monoliths",
+        "category": "Software Engineering",
+        "date": "May 22, 2024",
+        "image": "image25.jpg",
+        "description": "Comparing microservices and monolithic architectures: Which one is right for your project?",
+        "author": "Matthew Harris"
+    },
+    {
+        "id": 26,
+        "title": "The Art of Writing Effective Documentation",
+        "category": "Software Engineering",
+        "date": "May 20, 2024",
+        "image": "image26.jpg",
+        "description": "Best practices for writing clear, concise, and useful documentation for software teams.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 27,
+        "title": "Leading with Empathy",
+        "category": "Product",
+        "date": "May 18, 2024",
+        "image": "image27.jpg",
+        "description": "How empathetic leadership can transform teams, foster collaboration, and drive success.",
+        "author": "Olivia Rhye"
+    },
+    {
+        "id": 28,
+        "title": "Understanding API Security",
+        "category": "Software Engineering",
+        "date": "May 15, 2024",
+        "image": "image28.jpg",
+        "description": "A guide to securing your APIs against common vulnerabilities and attacks.",
+        "author": "Daniel Smith"
+    },
+    {
+        "id": 29,
+        "title": "The Evolution of UI Trends",
+        "category": "Design",
+        "date": "May 12, 2024",
+        "image": "image29.jpg",
+        "description": "A look at how UI design trends have evolved over time and where they are heading next.",
+        "author": "Ava Wilson"
+    },
+    {
+        "id": 30,
+        "title": "The Role of AI in Customer Support",
+        "category": "Customer Success",
+        "date": "May 10, 2024",
+        "image": "image30.jpg",
+        "description": "How AI-powered chatbots and automation are transforming the customer support industry.",
+        "author": "Ethan Robinson"
+    },
+    {
+        "id": 31,
+        "title": "The Impact of Minimalism in UI Design",
+        "category": "Design",
+        "date": "May 7, 2024",
+        "image": "image31.jpg",
+        "description": "Why minimalism is a powerful design approach and how it influences user engagement.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 32,
+        "title": "Growth Strategies for Startups",
+        "category": "Product",
+        "date": "May 5, 2024",
+        "image": "image32.jpg",
+        "description": "A deep dive into scalable growth strategies and go-to-market approaches for startups.",
+        "author": "James Martinez"
+    },
+    {
+        "id": 33,
+        "title": "Mastering Responsive Web Design",
+        "category": "Design",
+        "date": "May 3, 2024",
+        "image": "image33.jpg",
+        "description": "Techniques and frameworks for creating responsive web experiences across devices.",
+        "author": "Lucas Miller"
+    },
+    {
+        "id": 34,
+        "title": "The Importance of A/B Testing",
+        "category": "Product",
+        "date": "May 1, 2024",
+        "image": "image34.jpg",
+        "description": "How A/B testing helps optimize product features, improve UX, and drive better decisions.",
+        "author": "Charlotte White"
+    },
+    {
+        "id": 35,
+        "title": "Breaking Down the Design Thinking Process",
+        "category": "Design",
+        "date": "April 28, 2024",
+        "image": "image35.jpg",
+        "description": "An in-depth look at the design thinking process and its role in problem-solving.",
+        "author": "Matthew Harris"
+    },
+    {
+        "id": 36,
+        "title": "The Rise of No-Code and Low-Code Platforms",
+        "category": "Software Engineering",
+        "date": "April 26, 2024",
+        "image": "image36.jpg",
+        "description": "How no-code and low-code platforms are democratizing software development and accelerating innovation.",
+        "author": "Emma Davis"
+    },
+    {
+        "id": 37,
+        "title": "Human-Centered Product Management",
+        "category": "Product",
+        "date": "April 24, 2024",
+        "image": "image37.jpg",
+        "description": "The importance of human-centered approaches in building impactful and user-friendly products.",
+        "author": "Liam Johnson"
+    },
+    {
+        "id": 38,
+        "title": "Cybersecurity Best Practices for Developers",
+        "category": "Software Engineering",
+        "date": "April 22, 2024",
+        "image": "image38.jpg",
+        "description": "Essential cybersecurity practices to protect applications and user data from threats.",
+        "author": "Daniel Smith"
+    },
+    {
+        "id": 39,
+        "title": "Leveraging Data Analytics in Product Development",
+        "category": "Product",
+        "date": "April 19, 2024",
+        "image": "image39.jpg",
+        "description": "How data-driven decision-making enhances product development and user experience.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 40,
+        "title": "The Intersection of Design and Psychology",
+        "category": "Design",
+        "date": "April 17, 2024",
+        "image": "image40.jpg",
+        "description": "How psychological principles influence design decisions and user interactions.",
+        "author": "Lucas Miller"
+    },
+    {
+        "id": 41,
+        "title": "Building Scalable Backend Architectures",
+        "category": "Software Engineering",
+        "date": "April 15, 2024",
+        "image": "image41.jpg",
+        "description": "Key considerations and best practices for designing scalable and high-performance backend systems.",
+        "author": "Michael Brown"
+    },
+    {
+        "id": 42,
+        "title": "UX review presentations",
+        "category": "Design",
+        "date": "April 14, 2024",
+        "image": "image1.jpg",
+        "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+        "author": "Olivia Rhye"
+    },
+    {
+        "id": 43,
+        "title": "Migrating to Linear 101",
+        "category": "Product",
+        "date": "April 13, 2024",
+        "image": "image2.jpg",
+        "description": "Linear has been instrumental in software projects, bug tracking, and task management. Here's how to get started.",
+        "author": "Daniel Smith"
+    },
+    {
+        "id": 44,
+        "title": "Building your API stack",
+        "category": "Software Engineering",
+        "date": "April 12, 2024",
+        "image": "image3.jpg",
+        "description": "The rise of RESTful APIs has been a key factor in how we develop, testing, and managing them.",
+        "author": "Sophia Lee"
+    },
+    {
+        "id": 45,
+        "title": "PM mental models",
+        "category": "Product",
+        "date": "April 11, 2024",
+        "image": "image4.jpg",
+        "description": "Mental models are the cognitive shortcuts of complex problem-solving in the workplace.",
+        "author": "Liam Johnson"
+    },
+    {
+        "id": 46,
+        "title": "What is wireframing?",
+        "category": "Design",
+        "date": "April 10, 2024",
+        "image": "image5.jpg",
+        "description": "An introduction to Wireframing and its 10 Principles. Learn how it's widely used in the industry.",
+        "author": "Emma Davis"
+    },
+    {
+        "id": 47,
+        "title": "How collaboration makes us better designers",
+        "category": "Design",
+        "date": "April 9, 2024",
+        "image": "image6.jpg",
+        "description": "Collaboration makes our teams stronger, and our individual design skills sharper.",
+        "author": "Michael Brown"
+    },
+    {
+        "id": 48,
+        "title": "Our top 10 Javascript frameworks to use",
+        "category": "Product",
+        "date": "April 8, 2024",
+        "image": "image7.jpg",
+        "description": "Modern web applications require the best Javascript frameworks and front-end libraries.",
+        "author": "Lucas Miller"
+    },
+    {
+        "id": 49,
+        "title": "Podcast: Creating a better CX Community",
+        "category": "Customer Success",
+        "date": "April 7, 2024",
+        "image": "image8.jpg",
+        "description": "Storytelling, communication, and CX strategies. How do you get started?",
+        "author": "Ava Wilson"
+    },
+    {
+        "id": 50,
+        "title": "Introduction to Agile Project Management",
+        "category": "Product",
+        "date": "April 6, 2024",
+        "image": "image9.jpg",
+        "description": "A guide to understanding Agile principles, methodologies, and their implementation in product management.",
+        "author": "James Martinez"
+    },
+    {
+        "id": 51,
+        "title": "Introduction to Agile Project Management",
+        "category": "Product",
+        "date": "April 6, 2024",
+        "image": "image9.jpg",
+        "description": "A guide to understanding Agile principles, methodologies, and their implementation in product management.",
+        "author": "James Martinez"
+    }
+]
