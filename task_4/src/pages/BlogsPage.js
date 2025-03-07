@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import blogData from "../data/blogs.json";
 import BlogCard from "../components/BlogCard";
 import NewsletterCard from "../components/NewsletterCard";
@@ -13,6 +13,10 @@ const BlogsPage = () => {
   const [sortOrder, setSortOrder] = useState("most-recent");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 8;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, sortOrder]);
 
   const filteredPosts = filterPosts(blogData, searchQuery);
   const sortedPosts = sortPosts(filteredPosts, sortOrder);
