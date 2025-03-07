@@ -12,10 +12,12 @@ const BlogsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState("most-recent");
   const [currentPage, setCurrentPage] = useState(1);
+  const [shouldScroll, setShouldScroll] = useState(false);
   const postsPerPage = 8;
 
   useEffect(() => {
     setCurrentPage(1);
+    setShouldScroll(false);
   }, [searchQuery, sortOrder]);
 
   const filteredPosts = filterPosts(blogData, searchQuery);
@@ -46,7 +48,8 @@ const BlogsPage = () => {
           </>
         ))}
       </div>
-      <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
+      <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} shouldScroll={shouldScroll} 
+        setShouldScroll={setShouldScroll} />
     </div>
   );
 };

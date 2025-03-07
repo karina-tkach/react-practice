@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
+const Pagination = ({ currentPage, totalPages, setCurrentPage, shouldScroll, setShouldScroll }) => {
 
-    // Hardcoded scroll to the filter section
-    const filterSection = document.querySelector(".scroll-target");
-    if (filterSection) {
-      filterSection.scrollIntoView({ behavior: "smooth" });
+  useEffect(() => {
+    if (shouldScroll) {
+      const targetSection = document.querySelector(".scroll-target");
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+      setShouldScroll(false);
     }
-  };
+  }, [currentPage, shouldScroll, setShouldScroll]);
 
   const renderPageNumbers = () => {
     let pages = [];
@@ -22,7 +23,12 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
     return pages.map((page, index) => (
       <button
         key={index}
-        onClick={() => page !== "..." && handlePageChange(page)}
+        onClick={() => {
+          if (page !== "...") {
+            setCurrentPage(page);
+            setShouldScroll(true);
+          }
+        }}
         className={`px-3 py-1 rounded-lg disabled:opacity-50 ${
           currentPage === page ? "bg-gray-200 font-bold" : "hover:bg-gray-100"
         }`}
@@ -37,7 +43,10 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
     <div className="mt-8">
       <div className="hidden md:flex justify-center items-center space-x-2">
         <button
-          onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
+          onClick={() => {
+            setCurrentPage(Math.max(currentPage - 1, 1));
+            setShouldScroll(true);
+          }}
           disabled={currentPage === 1}
           className="px-3 py-1 text-black-200 hover:bg-gray-100 rounded-lg flex items-center disabled:opacity-50"
         >
@@ -47,7 +56,10 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
         {renderPageNumbers()}
 
         <button
-          onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
+          onClick={() => {
+            setCurrentPage(Math.min(currentPage + 1, totalPages));
+            setShouldScroll(true);
+          }}
           disabled={currentPage === totalPages}
           className="px-3 py-1 text-black-200 hover:bg-gray-100 rounded-lg flex items-center disabled:opacity-50"
         >
@@ -57,7 +69,10 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
 
       <div className="flex md:hidden justify-between items-center px-4 py-2 w-full">
         <button
-          onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
+          onClick={() => {
+            setCurrentPage(Math.max(currentPage - 1, 1));
+            setShouldScroll(true);
+          }}
           disabled={currentPage === 1}
           className="py-2 px-3 text-black-200 hover:bg-gray-100 border rounded-lg border-gray-300 flex items-center disabled:opacity-50"
         >
@@ -67,7 +82,10 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
           Page <strong>{currentPage}</strong> of <strong>{totalPages}</strong>
         </span>
         <button
-          onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
+          onClick={() => {
+            setCurrentPage(Math.min(currentPage + 1, totalPages));
+            setShouldScroll(true);
+          }}
           disabled={currentPage === totalPages}
           className="py-2 px-3 text-black-200 hover:bg-gray-100 border rounded-lg border-gray-300 flex items-center disabled:opacity-50"
         >

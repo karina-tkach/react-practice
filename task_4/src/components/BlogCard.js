@@ -13,7 +13,7 @@ const BlogCard = ({ post, large }) => {
             <div className={`flex flex-col flex-grow ${large ? "md:ml-6 md:w-2/5 md:justify-between" : ""}`}>
                 <p className="text-purple-600 text-sm font-medium mt-3">{post.category}</p>
 
-                <Link to={`/blog/${post.id}`} className={`flex items-center justify-between ${large ? "md:text-4xl" : "text-2xl"} font-semibold mt-2`}>
+                <Link to={`/blog/${post.id}`} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className={`flex items-center justify-between ${large ? "md:text-4xl" : "text-2xl"} font-semibold mt-2`}>
                     {post.title}
                     <ArrowUpRight className={`${large ? "md:w-8 md:h-8" : "w-5 h-5"}`} />
                 </Link>

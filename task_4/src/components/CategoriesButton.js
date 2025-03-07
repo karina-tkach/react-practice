@@ -6,7 +6,10 @@ const CategoriesButton = () => {
 
     return (
         <button
-            onClick={() => navigate("/categories")}
+        onClick={() => {
+            navigate("/categories");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
             className="relative flex items-center border space-x-6 border-gray-300 bg-gray-100/60 rounded-lg pr-4 py-2 shadow-sm text-gray-700 font-medium overflow-hidden"
         >
             <div>

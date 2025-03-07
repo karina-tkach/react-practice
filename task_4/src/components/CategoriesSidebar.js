@@ -3,7 +3,6 @@ import React from "react";
 const CategoriesSidebar = ({ categories, selectedCategory, setSelectedCategory }) => {
   return (
     <div>
-      {/* Mobile Dropdown */}
       <div className="block md:hidden mb-4">
         <select
           value={selectedCategory}
@@ -29,7 +28,10 @@ const CategoriesSidebar = ({ categories, selectedCategory, setSelectedCategory }
                     ? "bg-purple-600 text-white font-semibold"
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
-                onClick={() => setSelectedCategory(category)}
+                onClick={() => {
+                  setSelectedCategory(category)
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               >
                 {category}
               </button>

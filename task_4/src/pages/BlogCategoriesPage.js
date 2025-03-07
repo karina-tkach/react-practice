@@ -10,10 +10,12 @@ const BlogCategoriesPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
+  const [shouldScroll, setShouldScroll] = useState(false);
   const postsPerPage = 9;
 
   useEffect(() => {
     setCurrentPage(1);
+    setShouldScroll(false);
   }, [searchQuery, selectedCategory]);
 
   const categories = ["All", ...new Set(blogData.map((post) => post.category))];
@@ -67,7 +69,8 @@ const BlogCategoriesPage = () => {
         </div>
 
       </div>
-      <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
+      <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} shouldScroll={shouldScroll} 
+        setShouldScroll={setShouldScroll}/>
     </div>
   );
 };

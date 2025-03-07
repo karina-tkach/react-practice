@@ -43,14 +43,14 @@ const Header = () => {
 
 const HeaderLink = ({ href, content }) => {
   return (
-    <a href={href} className="text-gray-800 hover:text-black hover:font-medium">
+    <a href={href} className="w-full text-center md:text-left text-gray-800 hover:text-black hover:font-medium">
       {content}
     </a>
   );
 };
 
 const HeaderButton = ({ content, variant }) => {
-  const baseClasses = "px-4 py-2 rounded-md text-sm font-medium";
+  const baseClasses = "w-full md:w-[90px] px-4 py-2 rounded-md text-sm font-medium";
   const variantClasses =
     variant === "solid"
       ? "bg-purple-600 text-white hover:bg-purple-500"
