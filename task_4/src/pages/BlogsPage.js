@@ -6,6 +6,7 @@ import Pagination from "../components/Pagination";
 import SearchBar from "../components/SearchBar";
 import SortDropdown from "../components/SortDropdown";
 import CategoriesButton from "../components/CategoriesButton";
+import { filterPosts, sortPosts, paginatePosts } from "../utils/utils";
 
 const BlogsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -13,20 +14,10 @@ const BlogsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 8;
 
-  const filteredPosts = blogData.filter((post) =>
-    post.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredPosts = filterPosts(blogData, searchQuery);
+  const sortedPosts = sortPosts(filteredPosts, sortOrder);
+  const { currentPosts, totalPages } = paginatePosts(sortedPosts, currentPage, postsPerPage);
 
-  const sortedPosts = [...filteredPosts].sort((a, b) => {
-    if (sortOrder === "most-recent") return new Date(b.date) - new Date(a.date);
-    if (sortOrder === "oldest") return new Date(a.date) - new Date(b.date);
-    return a.title.localeCompare(b.title);
-  });
-
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
-  const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
 
   return (
     <div className="max-w-7xl mx-auto p-6">
