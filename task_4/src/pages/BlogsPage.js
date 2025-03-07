@@ -3,6 +3,9 @@ import blogData from "../data/blogs.json";
 import BlogCard from "../components/BlogCard";
 import NewsletterCard from "../components/NewsletterCard";
 import Pagination from "../components/Pagination";
+import SearchBar from "../components/SearchBar";
+import SortDropdown from "../components/SortDropdown";
+import CategoriesButton from "../components/CategoriesButton";
 
 const BlogsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -17,7 +20,7 @@ const BlogsPage = () => {
   const sortedPosts = [...filteredPosts].sort((a, b) => {
     if (sortOrder === "most-recent") return new Date(b.date) - new Date(a.date);
     if (sortOrder === "oldest") return new Date(a.date) - new Date(b.date);
-    if (sortOrder === "alphabetical") return a.title.localeCompare(b.title);
+    return a.title.localeCompare(b.title);
   });
 
   const indexOfLastPost = currentPage * postsPerPage;
@@ -27,10 +30,18 @@ const BlogsPage = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center">The latest writings from our team</h1>
-      <p className="text-center text-gray-600">
-        The latest industry news, interviews, and resources.
-      </p>
+      <div className="min-h-[280px] md:p-9 py-9 md:my-10 flex flex-col items-center text-center justify-between">
+        <p className="text-purple-600 font-bold">Our blog</p>
+        <h1 className="text-4xl font-bold">The latest writings from our team</h1>
+        <p className="text-gray-600 text-lg mt-3">
+          The latest industry news, interviews, technologies, and resources.
+        </p>
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      </div>
+      <div className="flex items-center justify-between my-10 md:flex-row flex-col space-y-7 md:space-y-0 scroll-target">
+        <CategoriesButton />
+        <SortDropdown sortOrder={sortOrder} setSortOrder={setSortOrder} />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {currentPosts.map((post, index) => (
